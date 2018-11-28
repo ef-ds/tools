@@ -1,4 +1,4 @@
-# testaplitter
+# testsplitter
 
 This tool splits a benchmark file into one benchmark file per bechmark test inside the file. The name of the new file is the name of the test and
 the test name written inside the file is written hard-coded as "Benchmark".
