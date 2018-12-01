@@ -197,21 +197,19 @@ func splitFile(file, suffix string) {
 	}
 
 	readFile(file, func(line string) {
-		if strings.HasPrefix(line, benchmark) {
-			if testName, err := getTestName(line); err == nil {
-				if testName != previousTestName {
-					if writer != nil {
-						writer.Flush()
-						fileHandle.Close()
-					}
-					fileHandle, _ = os.Create(path.Dir(file) + "/" + testName + suffix + ".txt")
-					writer = bufio.NewWriter(fileHandle)
-					previousTestName = testName
+		if testName, err := getTestName(line); err == nil && strings.HasPrefix(testName, benchmark) {
+			if testName != previousTestName {
+				if writer != nil {
+					writer.Flush()
+					fileHandle.Close()
 				}
-				writer.WriteString(benchmark)
-				writer.WriteString(line[len(testName):])
-				writer.WriteRune('\n')
+				fileHandle, _ = os.Create(path.Dir(file) + "/" + testName + suffix + ".txt")
+				writer = bufio.NewWriter(fileHandle)
+				previousTestName = testName
 			}
+			writer.WriteString(benchmark)
+			writer.WriteString(line[len(testName):])
+			writer.WriteRune('\n')
 		}
 	})
 	if writer != nil {
