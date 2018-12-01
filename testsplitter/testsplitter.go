@@ -177,7 +177,7 @@ func main() {
 	fmt.Println("Splitting file '" + *file + "'")
 	fmt.Println("Files suffix '" + *suffix + "'")
 	splitFile(*file, *suffix)
-	fmt.Println("File split successfully.")
+	fmt.Println("File processed successfully.")
 }
 
 func splitFile(file, suffix string) {
