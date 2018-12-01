@@ -214,7 +214,6 @@ func splitFile(file, suffix string) {
 			}
 		}
 	})
-
 	writer.Flush()
 	fileHandle.Close()
 }
