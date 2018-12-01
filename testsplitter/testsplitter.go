@@ -214,8 +214,10 @@ func splitFile(file, suffix string) {
 			}
 		}
 	})
-	writer.Flush()
-	fileHandle.Close()
+	if writer != nil {
+		writer.Flush()
+		fileHandle.Close()
+	}
 }
 
 func readFile(fileName string, f func(line string)) {
