@@ -159,10 +159,11 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"log"
 	"os"
 	"path"
 	"strings"
+
+	"github.com/ef-ds/tools/common"
 )
 
 func main() {
@@ -196,7 +197,7 @@ func splitFile(file, suffix string) {
 		return "", errors.New("test name not found")
 	}
 
-	readFile(file, func(line string) {
+	common.ReadFile(file, func(line string) {
 		if testName, err := getTestName(line); err == nil && strings.HasPrefix(testName, benchmark) {
 			if testName != previousTestName {
 				if writer != nil {
@@ -215,22 +216,5 @@ func splitFile(file, suffix string) {
 	if writer != nil {
 		writer.Flush()
 		fileHandle.Close()
-	}
-}
-
-func readFile(fileName string, f func(line string)) {
-	file, err := os.Open(fileName)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer file.Close()
-
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		f(scanner.Text())
-	}
-
-	if err := scanner.Err(); err != nil {
-		log.Fatal(err)
 	}
 }
