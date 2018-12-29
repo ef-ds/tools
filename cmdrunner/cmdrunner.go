@@ -32,11 +32,9 @@ package main
 
 import (
 	"bufio"
-	"bytes"
 	"flag"
 	"fmt"
 	"os"
-	"os/exec"
 	"strings"
 
 	"github.com/ef-ds/tools/common"
@@ -74,12 +72,13 @@ func runCommands(input, output string) {
 			if strings.HasPrefix(line, comment) {
 				outputWriter.WriteString(line[strings.Index(line, comment)+len(comment):])
 			} else {
-				mainCmd, args := splitCommand(line)
+				mainCmd, args := common.SplitCommand(line)
 				outputWriter.WriteString("```")
 				outputWriter.WriteRune('\n')
 				outputWriter.WriteString(line)
 				outputWriter.WriteRune('\n')
-				outputWriter.WriteString(executeCommand(outputWriter, mainCmd, args...))
+				output, _ := common.ExecuteCommand(outputWriter, mainCmd, args...)
+				outputWriter.WriteString(output)
 				outputWriter.WriteString("```")
 			}
 		}
@@ -89,61 +88,4 @@ func runCommands(input, output string) {
 	if len(output) > 0 {
 		outputFileHandle.Close()
 	}
-}
-
-func splitCommand(cmd string) (mainCmd string, args []string) {
-	mainCmd = ""
-	foundQuote := false
-	var b bytes.Buffer
-	args = make([]string, 0)
-	writeArg := func(arg string) {
-		if len(mainCmd) == 0 {
-			mainCmd = arg
-		} else {
-			args = append(args, arg)
-		}
-	}
-	for i := 0; i < len(cmd); i++ {
-		if cmd[i] == ' ' || cmd[i] == '"' || cmd[i] == '\'' {
-			if cmd[i] == '"' || cmd[i] == '\'' {
-				if foundQuote {
-					writeArg(b.String())
-					foundQuote = false
-				} else {
-					foundQuote = true
-				}
-				b.Reset()
-			} else if !foundQuote {
-				if b.Len() > 0 {
-					writeArg(b.String())
-					b.Reset()
-				}
-			} else {
-				b.WriteByte(cmd[i])
-			}
-		} else {
-			b.WriteByte(cmd[i])
-		}
-	}
-	if b.Len() > 0 {
-		writeArg(b.String())
-	}
-	return mainCmd, args
-}
-
-func executeCommand(writer *bufio.Writer, cmd string, arg ...string) string {
-	var b bytes.Buffer
-	var stdout, stderr bytes.Buffer
-	c := exec.Command(cmd, arg...)
-	c.Stdout = &stdout
-	c.Stderr = &stderr
-
-	err := c.Run()
-	b.WriteString(string(stdout.Bytes()))
-	if err != nil {
-		b.WriteString(string(stderr.Bytes()))
-		b.WriteRune('\n')
-		b.WriteString(err.Error())
-	}
-	return b.String()
 }
