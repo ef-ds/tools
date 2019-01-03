@@ -1,0 +1,89 @@
+//### Microservice Test Results
+//stack vs [list](https://github.com/golang/go/tree/master/src/container/list) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceList.txt
+
+//stack vs [CustomSliceStack](testdata_test.go) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceSlice.txt
+
+//stack vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/deque/deque.go) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceCookiejar.txt
+
+//stack vs [deque](https://github.com/ef-ds/deque) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceDeque.txt
+
+//### Other Test Results
+//#### stack vs [list](https://github.com/golang/go/tree/master/src/container/list)
+//stack vs list - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillList.txt
+
+//stack vs list - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillList.txt
+
+//stack vs list - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullList.txt
+
+//stack vs list - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseList.txt
+
+//stack vs list - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseList.txt
+
+//stack vs list - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableList.txt
+
+//#### stack vs [CustomSliceStack](https://github.com/ef-ds/stack-bench-tests/blob/master/testdata.go)
+//stack vs CustomSliceStack - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillSlice.txt
+
+//stack vs CustomSliceStack - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillSlice.txt
+
+//stack vs CustomSliceStack - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullSlice.txt
+
+//stack vs CustomSliceStack - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseSlice.txt
+
+//stack vs CustomSliceStack - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseSlice.txt
+
+//stack vs CustomSliceStack - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableSlice.txt
+
+//#### stack vs [cookiejar](https://github.com/karalabe/cookiejar/blob/v2/collections/stack/stack.go)
+//stack vs cookiejar - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillCookiejar.txt
+
+//stack vs cookiejar - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillCookiejar.txt
+
+//stack vs cookiejar - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullCookiejar.txt
+
+//stack vs cookiejar - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseCookiejar.txt
+
+//stack vs cookiejar - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseCookiejar.txt
+
+//stack vs cookiejar - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableCookiejar.txt
+
+//#### stack vs [deque](https://github.com/ef-ds/deque)
+//stack vs Deque - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillDeque.txt
+
+//stack vs Deque - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillDeque.txt
+
+//stack vs Deque - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullDeque.txt
+
+//stack vs Deque - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseDeque.txt
+
+//stack vs Deque - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseDeque.txt
+
+//stack vs Deque - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableDeque.txt
