@@ -5,7 +5,7 @@ benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.1.t
 //stack vs [CustomSliceStack](testdata_test.go) - [fill tests](benchmark-fill_test.go)
 benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.1.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillSlice.txt
 
-//stack vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/deque/deque.go) - [fill tests](benchmark-fill_test.go)
+//stack vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/stack/stack.go) - [fill tests](benchmark-fill_test.go)
 benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.1.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillCookiejar.txt
 
 //stack vs [deque](https://github.com/ef-ds/deque) - [fill tests](benchmark-fill_test.go)
@@ -18,7 +18,7 @@ benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStack
 //stack vs [CustomSliceStack](testdata_test.go) - [microservice tests](benchmark-microservice_test.go)
 benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.1.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceSlice.txt
 
-//stack vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/deque/deque.go) - [microservice tests](benchmark-microservice_test.go)
+//stack vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/stack/stack.go) - [microservice tests](benchmark-microservice_test.go)
 benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.1.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceCookiejar.txt
 
 //stack vs [deque](https://github.com/ef-ds/deque) - [microservice tests](benchmark-microservice_test.go)

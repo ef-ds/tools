@@ -11,7 +11,7 @@ benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.t
 //queue vs [eapache](https://github.com/eapache/queue) - [fill tests](benchmark-fill_test.go)
 benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillEapache.txt
 
-//queue vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/deque/deque.go) - [fill tests](benchmark-fill_test.go)
+//queue vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/queue/queue.go) - [fill tests](benchmark-fill_test.go)
 benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillCookiejar.txt
 
 //queue vs [deque](https://github.com/ef-ds/deque) - [fill tests](benchmark-fill_test.go)
@@ -31,7 +31,7 @@ benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueue
 //queue vs [eapache](https://github.com/eapache/queue) - [microservice tests](benchmark-microservice_test.go)
 benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceEapache.txt
 
-//queue vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/deque/deque.go) - [microservice tests](benchmark-microservice_test.go)
+//queue vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/queue/queue.go) - [microservice tests](benchmark-microservice_test.go)
 benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceCookiejar.txt
 
 //queue vs [deque](https://github.com/ef-ds/deque) - [microservice tests](benchmark-microservice_test.go)
