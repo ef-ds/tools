@@ -1,4 +1,10 @@
 //# v1.0.1 vs v1.0.2
+//## Fill tests
+//### FIFO queue
+benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeQueuev1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeQueuev1.0.2.txt
+//### LIFO stack
+benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeStackv1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeStackv1.0.2.txt
+
 //## Microservice tests
 //### FIFO queue
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkMicroserviceDequeQueuev1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkMicroserviceDequeQueuev1.0.2.txt
@@ -7,7 +13,6 @@ benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkMicroserviceDeque
 
 //## Other tests
 //### FIFO queue
-benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeQueuev1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeQueuev1.0.2.txt
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillDequeQueuev1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillDequeQueuev1.0.2.txt
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillFullDequeQueuev1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillFullDequeQueuev1.0.2.txt
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkSlowIncreaseDequeQueuev1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkSlowIncreaseDequeQueuev1.0.2.txt
@@ -15,7 +20,6 @@ benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkSlowDecreaseDeque
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkStableDequeQueuev1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkStableDequeQueuev1.0.2.txt
 
 //### LIFO stack
-benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeStackv1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkFillDequeStackv1.0.2.txt
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillDequeStackv1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillDequeStackv1.0.2.txt
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillFullDequeStackv1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkRefillFullDequeStackv1.0.2.txt
 benchstat ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkSlowIncreaseDequeStackv1.0.1.txt ./../../../ef-ds/deque-bench-tests/testdata/BenchmarkSlowIncreaseDequeStackv1.0.2.txt

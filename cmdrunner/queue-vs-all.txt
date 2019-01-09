@@ -1,0 +1,136 @@
+//### Fill Test Results
+//queue vs [list](https://github.com/golang/go/tree/master/src/container/list) - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillList.txt
+
+//queue vs [CustomSliceQueue](testdata_test.go) - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillSlice.txt
+
+//queue vs [impl7](https://github.com/christianrpetrin/queue-tests/tree/master/queueimpl7/queueimpl7.go) - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillImpl7.txt
+
+//queue vs [eapache](https://github.com/eapache/queue) - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillEapache.txt
+
+//queue vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/deque/deque.go) - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillCookiejar.txt
+
+//queue vs [deque](https://github.com/ef-ds/deque) - [fill tests](benchmark-fill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillDeque.txt
+
+
+//### Microservice Test Results
+//queue vs [list](https://github.com/golang/go/tree/master/src/container/list) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceList.txt
+
+//queue vs [CustomSliceQueue](testdata_test.go) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceSlice.txt
+
+//queue vs [impl7](https://github.com/christianrpetrin/queue-tests/tree/master/queueimpl7/queueimpl7.go) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceImpl7.txt
+
+//queue vs [eapache](https://github.com/eapache/queue) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceEapache.txt
+
+//queue vs [cookiejar](https://github.com/karalabe/cookiejar/blob/master/collections/deque/deque.go) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceCookiejar.txt
+
+//queue vs [deque](https://github.com/ef-ds/deque) - [microservice tests](benchmark-microservice_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceDeque.txt
+
+
+//### Other Test Results
+//#### queue vs [list](https://github.com/golang/go/tree/master/src/container/list)
+//queue vs list - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillList.txt
+
+//queue vs list - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullList.txt
+
+//queue vs list - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseList.txt
+
+//queue vs list - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseList.txt
+
+//queue vs list - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableList.txt
+
+//#### queue vs [CustomSliceQueue](https://github.com/ef-ds/queue-bench-tests/blob/master/testdata.go)
+//queue vs CustomSliceQueue - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillSlice.txt
+
+//queue vs CustomSliceQueue - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullSlice.txt
+
+//queue vs CustomSliceQueue - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseSlice.txt
+
+//queue vs CustomSliceQueue - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseSlice.txt
+
+//queue vs CustomSliceQueue - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableSlice.txt
+
+//#### queue vs [impl7](https://github.com/christianrpetrin/queue-tests/tree/master/queueimpl7/queueimpl7.go)
+//queue vs impl7 - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillImpl7.txt
+
+//queue vs impl7 - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullImpl7.txt
+
+//queue vs impl7 - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseImpl7.txt
+
+//queue vs impl7 - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseImpl7.txt
+
+//queue vs impl7 - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableImpl7.txt
+
+//#### queue vs [eapache](https://github.com/eapache/queue)
+//queue vs eapache - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillEapache.txt
+
+//queue vs eapache - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullEapache.txt
+
+//queue vs eapache - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseEapache.txt
+
+//queue vs eapache - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseEapache.txt
+
+//queue vs eapache - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableEapache.txt
+
+//#### queue vs [cookiejar](https://github.com/karalabe/cookiejar/blob/v2/collections/queue/queue.go)
+//queue vs cookiejar - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillCookiejar.txt
+
+//queue vs cookiejar - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullCookiejar.txt
+
+//queue vs cookiejar - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseCookiejar.txt
+
+//queue vs cookiejar - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseCookiejar.txt
+
+//queue vs cookiejar - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableCookiejar.txt
+
+//#### queue vs [deque](https://github.com/ef-ds/deque)
+//queue vs Deque - [refill tests](benchmark-refill_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillDeque.txt
+
+//queue vs Deque - [refill full tests](benchmark-refill-full_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullDeque.txt
+
+//queue vs Deque - [slow increase tests](benchmark-slow-increase_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseDeque.txt
+
+//queue vs Deque - [slow decrease tests](benchmark-slow-decrease_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseDeque.txt
+
+//queue vs Deque - [stable tests](benchmark-stable_test.go)
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableDeque.txt

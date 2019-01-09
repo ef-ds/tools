@@ -1,0 +1,13 @@
+//# v1.0.0 vs v1.0.1
+//## Fill tests
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkFillStackv1.0.1.txt
+
+//## Microservice tests
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkMicroserviceStackv1.0.1.txt
+
+//## Other tests
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillStackv1.0.1.txt
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkRefillFullStackv1.0.1.txt
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowIncreaseStackv1.0.1.txt
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkSlowDecreaseStackv1.0.1.txt
+benchstat ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableStackv1.0.0.txt ./../../../ef-ds/stack-bench-tests/testdata/BenchmarkStableStackv1.0.1.txt
