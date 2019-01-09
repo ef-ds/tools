@@ -1,0 +1,13 @@
+//# v1.0.0 vs v1.0.1
+//## Fill tests
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkFillQueuev1.0.1.txt
+
+//## Microservice tests
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkMicroserviceQueuev1.0.1.txt
+
+//## Other tests
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillQueuev1.0.1.txt
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkRefillFullQueuev1.0.1.txt
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowIncreaseQueuev1.0.1.txt
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkSlowDecreaseQueuev1.0.1.txt
+benchstat ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.0.txt ./../../../ef-ds/queue-bench-tests/testdata/BenchmarkStableQueuev1.0.1.txt
